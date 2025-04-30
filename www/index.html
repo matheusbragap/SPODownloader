@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <title>SPO Download</title>
+        <link rel="icon" href="img/favicon.ico">
+        
+        <!-- CSS do Ionic -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@latest/css/ionic.bundle.min.css">
+        <!-- CSS personalizado -->
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <ion-app> <!--  -->
+
+            <ion-header> <!--  -->
+                <!-- barra superior -->
+                <ion-toolbar> 
+                    
+                    <!-- navbar(button side bar)-->
+                    <ion-buttons slot="start"> <!-- deixa o botão da nav bar no começo -->
+                        <ion-button> <!-- lista de botões -->
+                            <ion-icon slot="icon-only" name="menu"></ion-icon> <!-- coloca o ícone do botão sidebar -->
+                        </ion-button>
+                    </ion-buttons>
+                    
+                    <ion-title>SPO DOWNLOADER</ion-title> <!-- título -->
+
+                    <!-- profile icon -->
+                    <ion-buttons slot="end">
+                        <ion-button style="--padding: 0; margin: 0;">
+                            <ion-icon name="person" size="large" style="font-size: 24px;"></ion-icon>
+                        </ion-button>
+                    </ion-buttons>
+
+                </ion-toolbar>
+            </ion-header>
+
+            <!-- Conteúdo principal -->
+            <ion-content class="app-content">
+            </ion-content>
+
+            <!-- footer -->
+            <ion-tab-bar slot="bottom">
+                <ion-tab-button>
+                    <ion-icon name="home"></ion-icon>
+                    <ion-label>Home</ion-label>
+                </ion-tab-button>
+                <ion-tab-button>
+                    <ion-icon name="search"></ion-icon>
+                    <ion-label>Search</ion-label>
+                </ion-tab-button>
+                <ion-tab-button>
+                    <ion-icon name="download"></ion-icon>
+                    <ion-label>Downloads</ion-label>
+                </ion-tab-button>
+                <ion-tab-button>
+                    <ion-icon name="settings"></ion-icon>
+                    <ion-label>Settings</ion-label>
+                </ion-tab-button>
+            </ion-tab-bar>
+        </ion-app>
+
+        <!-- Scripts -->
+        <script src="cordova.js"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.esm.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

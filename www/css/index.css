@@ -1,0 +1,17 @@
+/* ======================
+       IONIC
+   ====================== */
+   :root {
+    /* color-dynamic */
+    --ion-color-primary: #1DB954;
+
+     --ion-background-color: #121212; /*background */
+    
+    /* tool-bar */
+    --ion-toolbar-background: #1E1E1E;
+    --ion-toolbar-color: #ffffff;
+    
+    /* footer-bar */
+    --ion-tab-bar-background: #1E1E1E;
+    --ion-tab-bar-color: #ffffff99;
+  }
