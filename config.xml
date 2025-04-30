@@ -1,11 +1,44 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.matheusdev.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>SpoDownload</name>
-    <description>Sample Apache Cordova App</description>
+    <name>SPO Downloader</name>
+    <description> </description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+
+    <platform name="android">
+        <!-- Ícones adaptativos para Android 8.0+ -->
+        <resource-file src="resources/android/icon/mipmap-anydpi-v26/ic_launcher.xml" target="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
+        <icon density="mdpi" src="resources/android/icon/mipmap-mdpi/ic_launcher.png" />
+        <icon density="hdpi" src="resources/android/icon/mipmap-hdpi/ic_launcher.png" />
+        <icon density="xhdpi" src="resources/android/icon/mipmap-xhdpi/ic_launcher.png" />
+        <icon density="xxhdpi" src="resources/android/icon/mipmap-xxhdpi/ic_launcher.png" />
+        <icon density="xxxhdpi" src="resources/android/icon/mipmap-xxxhdpi/ic_launcher.png" />
+
+        <!-- Ícones adaptativos (background e foreground) -->
+        <resource-file src="resources/android/icon/mipmap-mdpi/ic_launcher_adaptive_back.png" target="app/src/main/res/mipmap-mdpi/ic_launcher_adaptive_back.png" />
+        <resource-file src="resources/android/icon/mipmap-mdpi/ic_launcher_adaptive_fore.png" target="app/src/main/res/mipmap-mdpi/ic_launcher_adaptive_fore.png" />
+        <resource-file src="resources/android/icon/mipmap-hdpi/ic_launcher_adaptive_back.png" target="app/src/main/res/mipmap-hdpi/ic_launcher_adaptive_back.png" />
+        <resource-file src="resources/android/icon/mipmap-hdpi/ic_launcher_adaptive_fore.png" target="app/src/main/res/mipmap-hdpi/ic_launcher_adaptive_fore.png" />
+        <resource-file src="resources/android/icon/mipmap-xhdpi/ic_launcher_adaptive_back.png" target="app/src/main/res/mipmap-xhdpi/ic_launcher_adaptive_back.png" />
+        <resource-file src="resources/android/icon/mipmap-xhdpi/ic_launcher_adaptive_fore.png" target="app/src/main/res/mipmap-xhdpi/ic_launcher_adaptive_fore.png" />
+        <resource-file src="resources/android/icon/mipmap-xxhdpi/ic_launcher_adaptive_back.png" target="app/src/main/res/mipmap-xxhdpi/ic_launcher_adaptive_back.png" />
+        <resource-file src="resources/android/icon/mipmap-xxhdpi/ic_launcher_adaptive_fore.png" target="app/src/main/res/mipmap-xxhdpi/ic_launcher_adaptive_fore.png" />
+        <resource-file src="resources/android/icon/mipmap-xxxhdpi/ic_launcher_adaptive_back.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher_adaptive_back.png" />
+        <resource-file src="resources/android/icon/mipmap-xxxhdpi/ic_launcher_adaptive_fore.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher_adaptive_fore.png" />
+
+        <!-- Splash screen -->
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/android/splash/splash.png" />
+        <preference name="AndroidWindowSplashScreenBackground" value="#121212" /> <!-- background color -->
+    </platform>
+
+    <!-- config splash screen -->
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="1000" /> <!-- Duração em milissegundos -->
+    <preference name="FadeSplashScreenDuration" value="300" /> <!-- Duração do fade -->
+    <preference name="ShowSplashScreenSpinner" value="false" /> <!-- Ocultar spinner -->
+    <preference name="SplashMaintainAspectRatio" value="true" /> <!-- Manter proporção -->
 </widget>
