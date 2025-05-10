@@ -15,3 +15,11 @@
     --ion-tab-bar-background: #1E1E1E;
     --ion-tab-bar-color: #ffffff99;
   }
+
+
+/* footer */
+ion-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

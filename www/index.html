@@ -7,66 +7,42 @@
         <title>SPO Download</title>
         <link rel="icon" href="img/favicon.ico">
         
-        <!-- CSS do Ionic -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@latest/css/ionic.bundle.min.css">
+        <!-- ionic framework -->
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+        <!-- angular -->
+        <script src="dependencies/angular/angular.min.js"></script>
+        <script src="dependencies/angular/angular-route.js"></script>
+        <script src="dependencies/angular/angular-resource.js"></script>
+
         <!-- CSS personalizado -->
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="./css/index.css">
     </head>
-    <body>
-        <ion-app> <!--  -->
-
-            <ion-header> <!--  -->
-                <!-- barra superior -->
-                <ion-toolbar> 
-                    
-                    <!-- navbar(button side bar)-->
-                    <ion-buttons slot="start"> <!-- deixa o botão da nav bar no começo -->
-                        <ion-button> <!-- lista de botões -->
-                            <ion-icon slot="icon-only" name="menu"></ion-icon> <!-- coloca o ícone do botão sidebar -->
-                        </ion-button>
-                    </ion-buttons>
-                    
-                    <ion-title>SPO DOWNLOADER</ion-title> <!-- título -->
-
-                    <!-- profile icon -->
-                    <ion-buttons slot="end">
-                        <ion-button style="--padding: 0; margin: 0;">
-                            <ion-icon name="person" size="large" style="font-size: 24px;"></ion-icon>
-                        </ion-button>
-                    </ion-buttons>
-
-                </ion-toolbar>
-            </ion-header>
-
-            <!-- Conteúdo principal -->
-            <ion-content class="app-content">
-            </ion-content>
-
-            <!-- footer -->
-            <ion-tab-bar slot="bottom">
-                <ion-tab-button>
-                    <ion-icon name="home"></ion-icon>
-                    <ion-label>Home</ion-label>
-                </ion-tab-button>
-                <ion-tab-button>
-                    <ion-icon name="search"></ion-icon>
-                    <ion-label>Search</ion-label>
-                </ion-tab-button>
-                <ion-tab-button>
-                    <ion-icon name="download"></ion-icon>
-                    <ion-label>Downloads</ion-label>
-                </ion-tab-button>
-                <ion-tab-button>
-                    <ion-icon name="settings"></ion-icon>
-                    <ion-label>Settings</ion-label>
-                </ion-tab-button>
-            </ion-tab-bar>
+    <body ng-app="spoApp">
+        <ion-app>
+            <!-- locate load -->
+            <div ng-view></div>
         </ion-app>
+        
+        <!-- ===================================================== controller's ===================================================== -->
+        <!-- route -->
+        <script src="./js/app.js"></script>
+        
+        <!-- pages -->
+        <script src="./js/controllers/pagesControllers/homeController.js"></script>
+        <script src="./js/controllers/pagesControllers/searchController.js"></script>
+        <script src="./js/controllers/pagesControllers/downloadsController.js"></script>
+        <script src="./js/controllers/pagesControllers/settingsControler.js"></script>
 
-        <!-- Scripts -->
-        <script src="cordova.js"></script>
-        <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.esm.js"></script>
-        <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.js"></script>
-        <script src="js/index.js"></script>
+        <!-- components -->
+        <script src="./js/controllers/componentsControllers/footerController.js"></script>
+        <script src="./js/controllers/componentsControllers/headerController.js"></script>
+        <!-- ===================================================== controller's ===================================================== -->
+       
+        <!-- icon's ionic -->
+        <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
     </body>
 </html>

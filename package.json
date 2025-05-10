@@ -14,18 +14,22 @@
   "license": "Apache-2.0",
   "cordova": {
     "platforms": [
-      "android"
+      "android",
+      "browser"
     ],
     "plugins": {
       "cordova-plugin-splashscreen": {}
     }
   },
   "dependencies": {
-    "@ionic/angular": "^8.5.5",
-    "@ionic/core": "^8.5.5"
+    "@angular/core": "^19.2.10",
+    "@ionic/angular": "^8.5.7",
+    "@ionic/core": "^8.5.7",
+    "ionicons": "^8.0.8"
   },
   "devDependencies": {
     "cordova-android": "^14.0.1",
+    "cordova-browser": "^7.0.0",
     "cordova-plugin-splashscreen": "^6.0.1",
     "windows": "^0.1.2"
   }

@@ -1,0 +1,20 @@
+<ion-footer class="ion-no-border" ng-controller="footerController">
+<ion-tab-bar>
+    <ion-tab-button tab="home" ng-click="goToPage('/')">
+    <ion-icon name="home"></ion-icon>
+    <ion-label>Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="search" ng-click="goToPage('/search')">
+    <ion-icon name="search"></ion-icon>
+    <ion-label>Search</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="downloads" ng-click="goToPage('/downloads')">
+    <ion-icon name="download"></ion-icon>
+    <ion-label>Downloads</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="settings" ng-click="goToPage('/settings')">
+    <ion-icon name="settings"></ion-icon>
+    <ion-label>Settings</ion-label>
+    </ion-tab-button>
+</ion-tab-bar>
+</ion-footer>
