@@ -1,20 +1,22 @@
-<ion-footer class="ion-no-border" ng-controller="footerController">
-<ion-tab-bar>
-    <ion-tab-button tab="home" ng-click="goToPage('/')">
-    <ion-icon name="home"></ion-icon>
-    <ion-label>Home</ion-label>
-    </ion-tab-button>
-    <ion-tab-button tab="search" ng-click="goToPage('/search')">
-    <ion-icon name="search"></ion-icon>
-    <ion-label>Search</ion-label>
-    </ion-tab-button>
-    <ion-tab-button tab="downloads" ng-click="goToPage('/downloads')">
-    <ion-icon name="download"></ion-icon>
-    <ion-label>Downloads</ion-label>
-    </ion-tab-button>
-    <ion-tab-button tab="settings" ng-click="goToPage('/settings')">
-    <ion-icon name="settings"></ion-icon>
-    <ion-label>Settings</ion-label>
-    </ion-tab-button>
-</ion-tab-bar>
-</ion-footer>
+<nav class="navbar fixed-bottom custom-footer bg-secondary" ng-controller="footerController">
+  <div class="container-fluid">
+    <div class="d-flex w-100">
+      <button class="btn btn-link text-center footer-btn text-decoration-none flex-grow-1 py-2" ng-class="{'active': currentPage === '/'}" ng-click="goToPage('/')">
+        <i class="bi bi-house fs-4"></i><br>
+        <small>Home</small>
+      </button>
+      <button class="btn btn-link text-center footer-btn text-decoration-none flex-grow-1 py-2" ng-class="{'active': currentPage === '/search'}" ng-click="goToPage('/search')">
+        <i class="bi bi-search fs-4"></i><br>
+        <small>Search</small>
+      </button>
+      <button class="btn btn-link text-center footer-btn text-decoration-none flex-grow-1 py-2" ng-class="{'active': currentPage === '/downloads'}" ng-click="goToPage('/downloads')">
+        <i class="bi bi-download fs-4"></i><br>
+        <small>Downloads</small>
+      </button>
+      <button class="btn btn-link text-center footer-btn text-decoration-none flex-grow-1 py-2" ng-class="{'active': currentPage === '/settings'}" ng-click="goToPage('/settings')">
+        <i class="bi bi-gear fs-4"></i><br>
+        <small>Settings</small>
+      </button>
+    </div>
+  </div>
+</nav>

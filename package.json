@@ -15,7 +15,8 @@
   "cordova": {
     "platforms": [
       "android",
-      "browser"
+      "browser",
+      "electron"
     ],
     "plugins": {
       "cordova-plugin-splashscreen": {}
@@ -30,6 +31,7 @@
   "devDependencies": {
     "cordova-android": "^14.0.1",
     "cordova-browser": "^7.0.0",
+    "cordova-electron": "^4.0.0",
     "cordova-plugin-splashscreen": "^6.0.1",
     "windows": "^0.1.2"
   }

@@ -1,25 +1,29 @@
-/* ======================
-       IONIC
-   ====================== */
-   :root {
-    /* color-dynamic */
-    --ion-color-primary: #1DB954;
+:root{
+  --bs-dark-rgb: 30, 30, 30;
+  --bs-secondary-rgb: 18, 18, 18;
+}
 
-     --ion-background-color: #121212; /*background */
-    
-    /* tool-bar */
-    --ion-toolbar-background: #1E1E1E;
-    --ion-toolbar-color: #ffffff;
-    
-    /* footer-bar */
-    --ion-tab-bar-background: #1E1E1E;
-    --ion-tab-bar-color: #ffffff99;
-  }
+/* ==== estado normal do botão ==== */
+.btn-link { /* todos os elementos com a classe 'btn-link' */
+  transition: all 50ms ease; /* Animação suave*/
+  color: rgb(255, 255, 255);
+}
 
+/* ==== hover (ao passar o mouse em cima) ==== */
+.btn-link:hover { /* durante o hover */
+  background-color: #1db95404 !important;   /* fundo branco com 10% de transparência*/
+  transform: translateY(-2px);  /* move o botão para cima(eixo Y) */
+}
 
-/* footer */
-ion-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+/* ==== interno elements (ícones e textos) ==== */
+.btn-link:hover i, /* <i> dentro do botão do hover */
+.btn-link:hover small { /* small text dentro do botão com hover */
+  opacity: 0.3;
+  color: #1DB954 !important;
+}
+
+/* buttom actived (footer)*/
+.btn-link.active {
+  border-top: 2px solid #1DB954 !important;
+  color: #1DB954
 }
