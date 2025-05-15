@@ -3,6 +3,10 @@
   --bs-secondary-rgb: 18, 18, 18;
 }
 
+body {
+  background-color: #1e1e1e;
+}
+
 /* ==== estado normal do botão ==== */
 .btn-link { /* todos os elementos com a classe 'btn-link' */
   transition: all 50ms ease; /* Animação suave*/
@@ -27,3 +31,4 @@
   border-top: 2px solid #1DB954 !important;
   color: #1DB954
 }
+

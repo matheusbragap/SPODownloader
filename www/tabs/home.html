@@ -1,7 +1,18 @@
 <!-- header -->
 <div ng-include="'components/header.html'"></div>
 
-<div class="container-fluid p-3">
+<div class="container-fluid d-flex justify-content-center align-items-center main-container">
+  <div class="text-center content-wrapper">
+    <h2 class="mb-4 text-white">Envie o link da sua música ou playlist abaixo!</h2>
+    
+    <div class="input-group mb-3">
+      <input type="url" class="form-control centered-input" ng-model="musicLink" placeholder="{{ currentPlaceholder }}">
+    </div>
+    
+    <button class="btn submit-button" ng-click="submitLink()">
+      <i class="bi bi-send-fill me-2"></i>Enviar
+    </button>
+  </div>
 </div>
 
 <!-- footer -->

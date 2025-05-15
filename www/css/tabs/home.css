@@ -1,0 +1,50 @@
+/* ==== HOME ==== */
+/* Container principal */
+.main-container {
+  min-height: calc(100vh - 120px);
+}
+
+/* Apenas o estilo do campo de input */
+.centered-input {
+  width: 300px; /* Largura reduzida */
+  padding: 12px 20px;
+  border: 2px solid #1DB954;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-align: center;
+  color: white; /* Texto branco */
+  background-color: transparent;
+}
+
+.centered-input:focus {
+  background-color: #00000038; /* Mantém transparente */
+  border-color: #1ed760 !important; /* Muda a cor da borda para um verde mais claro */
+  box-shadow: none !important; /* Remove o box-shadow do Bootstrap */
+  color: white !important; /* Garante que o texto continue branco */
+}
+
+.centered-input:focus::placeholder {
+  opacity: 0; /* Torna o placeholder invisível */
+  transition: opacity 0.2s ease; /* Adiciona um efeito de transição suave (opcional) */
+}
+
+
+.centered-input::placeholder {
+  color: #b3b3b3; /* Cor do placeholder */
+}
+
+/* Botão de submit */
+.submit-button {
+  background-color: #1DB954;
+  color: white;
+  border-radius: 50px;
+  padding: 8px 24px;
+  font-weight: 500;
+  transition: all 0.3s;
+  border: none;
+}
+
+.submit-button:hover {
+  background-color: #1ed760;
+  transform: translateY(-2px);
+}
